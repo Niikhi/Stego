@@ -1,10 +1,10 @@
 import cv2
 import numpy as np
-from PIL import Image
+from PIL import   Image
 
 #it convert data in binary formate
 def data2binary(data):
-    if type(data) == str:
+    if type(data) ==   str:
         p = ''.join([format(ord(i), '08b')for i in data])
     elif type(data) == bytes or type(data) == np.ndarray:
         p = [format(i, '08b')for i in data]
